@@ -1,10 +1,20 @@
 function navigate(pageName) {
     const page = PAGES[pageName];
     if (!page) return;
+
     
     const mainPage = document.querySelector('.main-page');
     mainPage.classList.add('fade-out');
+
     
+    if (pageName == "finals" || pageName == "midterms") {
+        document.querySelector('#bg-video').classList.add('zoomed')
+    }
+    else {
+        document.querySelector('#bg-video').classList.remove('zoomed')
+
+    }
+
     setTimeout(() => {
         mainPage.innerHTML = page;
         mainPage.classList.remove('fade-out');
