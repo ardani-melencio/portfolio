@@ -143,7 +143,7 @@ footer div{
     padding: 40px;
 }
 
-#navigation button {
+#navigation .button {
     font-family: 'Halfre';
     font-size: 50px;
     background-color: transparent;
@@ -155,11 +155,13 @@ footer div{
     border: 0px;
     border-left: 2px solid aliceblue;
     text-align: left;
+    text-decoration: none;
+    padding-top: 10px;
     padding-left: 20px;
     transition: all 0.1s ease;
 }
 
-#navigation button:hover {
+#navigation .button:hover {
     background-color: var(--main-color-hover);
     background-image: linear-gradient(90deg, var(--main-color), rgba(0, 0, 0, 0) 90%);
 }
