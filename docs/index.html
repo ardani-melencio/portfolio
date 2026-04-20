@@ -12,41 +12,42 @@
   </video>
   <main>
     <div class="top-bar">
-      Test
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="html/midterms.html">Midterms</a>
+        <a href="html/finals.html">Finals</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
     <div class="main-page">
       <div id="welcome-panel">
-        <h1>
-          welcome!
-        </h1>
-        <h3>
-          Introduction: 
-        </h3>
-        <p>
-          This e-portfolio presents my Midterm Project in Object-Oriented Programming using Github Pages. 
-        </p>
-        <p>
-          It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts.
-        </p>
+        <h1>welcome!</h1>
+        <h3>Introduction:</h3>
+        <p>This e-portfolio presents my Midterm Project in Object-Oriented Programming using Github Pages.</p>
+        <p>It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts.</p>
       </div>
       <div id="navigation">
-        <button>midterms</button>
-        <button>finals</button>
+        <a href="html/midterms.html" class="button">midterms</a>
+        <a href="html/finals.html" class="button">finals</a>
       </div>
     </div>
     <footer class="contacts">
-      <div id="date">
-        &copy; 2026 Ardani Melencio | Object-Oriented Programming Midterm Project
-      </div>
+      <div id="date">&copy; 2026 Ardani Melencio | Object-Oriented Programming Midterm Project</div>
       <div id="details">
-        <p>
-          author: Ardani Jandel Melencio
-        </p>
-        <p>
-          gmail: ardanimelencio@gmail.com  | contact number: 09393452249
-        </p>
+        <p>author: Ardani Jandel Melencio</p>
+        <p>gmail: ardanimelencio@gmail.com | contact number: 09393452249</p>
       </div>
     </footer>
   </main>
+  <script src="js/navigation.js"></script>
+  <script>
+    // Play reverse animation if arriving from zoomed page
+    if (sessionStorage.getItem('comingFromZoom') === 'true') {
+      sessionStorage.removeItem('comingFromZoom');
+      const video = document.getElementById('bg-video');
+      video.style.transform = 'scale(2.5) translateX(-300px)';
+      video.classList.add('zoom-reverse');
+    }
+  </script>
 </body>
 </html>
