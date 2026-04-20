@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Object-Oriented Programming E-Portfolio</title>
   <link rel="stylesheet" href="css/homepage.css">
+  <script src="js/pages.js"></script>
+  <script src="js/router.js"></script>
 </head>
 <body>
   <video autoplay muted loop playsinline id="bg-video">
@@ -13,23 +15,23 @@
   <main>
     <div class="top-bar">
       <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="html/midterms.html">Midterms</a>
-        <a href="html/finals.html">Finals</a>
-        <a href="contact.html">Contact</a>
+        <a href="#" class="active" data-page="index">Home</a>
+        <a href="#" data-page="midterms">Midterms</a>
+        <a href="#" data-page="finals">Finals</a>
+        <a href="#" data-page="contact">Contact</a>
       </nav>
     </div>
     <div class="main-page">
-      <div id="welcome-panel">
-        <h1>welcome!</h1>
-        <h3>Introduction:</h3>
-        <p>This e-portfolio presents my Midterm Project in Object-Oriented Programming using Github Pages.</p>
-        <p>It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts.</p>
-      </div>
-      <div id="navigation">
-        <a href="html/midterms.html" class="button">midterms</a>
-        <a href="html/finals.html" class="button">finals</a>
-      </div>
+        <div id="welcome-panel">
+            <h1>welcome!</h1>
+            <h3>Introduction:</h3>
+            <p>This e-portfolio presents my Midterm Project in Object-Oriented Programming using Github Pages.</p>
+            <p>It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts.</p>
+        </div>
+        <div id="navigation">
+            <a href="#" class="button" data-page="midterms">midterms</a>
+            <a href="#" class="button" data-page="finals">finals</a>
+        </div>
     </div>
     <footer class="contacts">
       <div id="date">&copy; 2026 Ardani Melencio | Object-Oriented Programming Midterm Project</div>
@@ -39,15 +41,5 @@
       </div>
     </footer>
   </main>
-  <script src="js/navigation.js"></script>
-  <script>
-    // Play reverse animation if arriving from zoomed page
-    if (sessionStorage.getItem('comingFromZoom') === 'true') {
-      sessionStorage.removeItem('comingFromZoom');
-      const video = document.getElementById('bg-video');
-      video.style.transform = 'scale(2.5) translateX(-300px)';
-      video.classList.add('zoom-reverse');
-    }
-  </script>
 </body>
 </html>

@@ -1,19 +1,19 @@
-.move-out-animation {
-    animation: scale-return 0.3s ease-out;
-  }
-
-@keyframes scale-return {
-    0% { transform: scale(1); }
-    50% { transform: scale(0.95); opacity: 0.8; }
-    100% { transform: scale(1); opacity: 1; }
-}
-
 @keyframes backgroundZoomReverse {
-    from { transform: scale(2.5) translateX(-300px); opacity: 0.8; }
+    from { transform: scale(2.5) translateX(-300px); opacity: 1; }
     to { transform: scale(1) translateX(0); opacity: 1; }
 }
 
 #bg-video.zoom-reverse {
     animation: backgroundZoomReverse 0.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.fade-out {
+    animation: fadeout 0.2s;
     animation-fill-mode: forwards;
 }
