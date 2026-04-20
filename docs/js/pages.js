@@ -45,10 +45,8 @@ const PAGES = {
                 <h1>Midterm Quizzes</h1>
                 <h3>Quizzes</h3>
                 <p>Add your quiz content here...</p>
+                <a href="#" class="button" data-page="midterms">Back to Midterms</a>
             </div>
-        </div>
-        <div id="navigation">
-            <a href="#" class="button" data-page="midterms">Back</a>
         </div>
     `,
     'midterms-seatworks': `
@@ -57,10 +55,8 @@ const PAGES = {
                 <h1>Midterm Seatworks</h1>
                 <h3>Seatworks</h3>
                 <p>Add your seatwork content here...</p>
+                <a href="#" class="button" data-page="midterms">Back to Midterms</a>
             </div>
-        </div>
-        <div id="navigation">
-            <a href="#" class="button" data-page="midterms">Back</a>
         </div>
     `,
     'midterms-activities': `
@@ -69,10 +65,8 @@ const PAGES = {
                 <h1>Midterm Activities</h1>
                 <h3>Activities</h3>
                 <p>Add your activity content here...</p>
+                <a href="#" class="button" data-page="midterms">Back to Midterms</a>
             </div>
-        </div>
-        <div id="navigation">
-            <a href="#" class="button" data-page="midterms">Back</a>
         </div>
     `,
     'midterms-exam': `
@@ -81,10 +75,8 @@ const PAGES = {
                 <h1>Midterm Exam</h1>
                 <h3>Exam</h3>
                 <p>Add your exam content here...</p>
+                <a href="#" class="button" data-page="midterms">Back to Midterms</a>
             </div>
-        </div>
-        <div id="navigation">
-            <a href="#" class="button" data-page="midterms">Back</a>
         </div>
     `,
     'finals-quizzes': `
@@ -93,10 +85,8 @@ const PAGES = {
                 <h1>Finals Quizzes</h1>
                 <h3>Quizzes</h3>
                 <p>Add your quiz content here...</p>
+                <a href="#" class="button" data-page="finals">Back to Finals</a>
             </div>
-        </div>
-        <div id="navigation">
-            <a href="#" class="button" data-page="finals">Back</a>
         </div>
     `,
     'finals-seatworks': `
@@ -105,10 +95,8 @@ const PAGES = {
                 <h1>Finals Seatworks</h1>
                 <h3>Seatworks</h3>
                 <p>Add your seatwork content here...</p>
+                <a href="#" class="button" data-page="finals">Back to Finals</a>
             </div>
-        </div>
-        <div id="navigation">
-            <a href="#" class="button" data-page="finals">Back</a>
         </div>
     `,
     'finals-activities': `
@@ -117,10 +105,8 @@ const PAGES = {
                 <h1>Finals Activities</h1>
                 <h3>Activities</h3>
                 <p>Add your activity content here...</p>
+                <a href="#" class="button" data-page="finals">Back to Finals</a>
             </div>
-        </div>
-        <div id="navigation">
-            <a href="#" class="button" data-page="finals">Back</a>
         </div>
     `,
     'finals-exam': `
@@ -129,10 +115,8 @@ const PAGES = {
                 <h1>Finals Exam</h1>
                 <h3>Exam</h3>
                 <p>Add your exam content here...</p>
+                <a href="#" class="button" data-page="finals">Back to Finals</a>
             </div>
-        </div>
-        <div id="navigation">
-            <a href="#" class="button" data-page="finals">Back</a>
         </div>
     `,
     contact: `
