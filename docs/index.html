@@ -1,45 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Object-Oriented Programming E-Portfolio</title>
-  <link rel="stylesheet" href="css/homepage.css">
-  <script src="js/pages.js"></script>
-  <script src="js/router.js"></script>
-</head>
-<body>
-  <video autoplay muted loop playsinline id="bg-video">
-    <source src="img/black-hole-dark-space-1-moewalls-com.mp4" type="video/mp4">
-  </video>
-  <main>
-    <div class="top-bar">
-      <nav>
-        <a href="#" class="active" data-page="index">Home</a>
-        <a href="#" data-page="midterms">Midterms</a>
-        <a href="#" data-page="finals">Finals</a>
-        <a href="#" data-page="contact">Contact</a>
-      </nav>
-    </div>
-    <div class="main-page">
-        <div id="welcome-panel">
-            <h1>welcome!</h1>
-            <h3>Introduction:</h3>
-            <p>This e-portfolio presents my Midterm Project in Object-Oriented Programming using Github Pages.</p>
-            <p>It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts.</p>
-        </div>
-        <div id="navigation">
-            <a href="#" class="button" data-page="midterms">midterms</a>
-            <a href="#" class="button" data-page="finals">finals</a>
-        </div>
-    </div>
-    <footer class="contacts">
-      <div id="date">&copy; 2026 Ardani Melencio | Object-Oriented Programming Midterm Project</div>
-      <div id="details">
-        <p>author: Ardani Jandel Melencio</p>
-        <p>gmail: ardanimelencio@gmail.com | contact number: 09393452249</p>
-      </div>
-    </footer>
-  </main>
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Object-Oriented Programming E-Portfolio</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/router.js"></script>
+    </head>
+    <body class="main-page" style="transition: none;">
+        <header>
+            <nav style="padding-right: 10px;">
+                <a href="index.html" class="active" data-page="index">Home</a>
+                <a href="../html/midterms.html">Midterms</a>
+                <a href="../html/finals.html">Finals</a>
+                <a href="#" data-page="contact">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <div class="left-panel">
+                <div class="card">
+                    <h1>welcome!</h1>
+                    <h3>Introduction:</h3>
+                    <p>This e-portfolio presents my Midterm Project in Object-Oriented Programming using Github Pages.</p>
+                    <p>It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts.</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <a href="../html/midterms.html" class="button">midterms</a>
+                <a href="" class="button" data-page="finals">finals</a>
+            </div>
+        </main>
+        <footer>
+            <div id="date">&copy; 2026 Ardani Melencio | Object-Oriented Programming Midterm Project</div>
+            <div id="details">
+                <p>author: Ardani Jandel Melencio</p>
+                <p>gmail: ardanimelencio@gmail.com | contact number: 09393452249</p>
+            </div>
+        </footer>
+    </body>
 </html>
