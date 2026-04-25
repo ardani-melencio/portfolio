@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Object-Oriented Programming E-Portfolio</title>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/activities.css">
         <script src="js/router.js"></script>
     </head>
     <body class="terms" style="transition: none;">
@@ -19,11 +20,45 @@
             </nav>
         </header>
         <main>
-            <details style="transition: all 0.5s; border: 1px solid blue; border-radius: 10px;" class="collapsible">
-  <summary>Quiz 1: Variable Analysis</summary>
-  <p><strong>Question:</strong> What happens when s3 = s2?</p>
-  <p><strong>Answer:</strong> s3 becomes a reference to the same object as s2.</p>
-  <p><strong>Explanation:</strong> This copies the pointer, not the object—modifying s3 affects s2 too.</p>
+            <details>
+    <summary>Activity #1 – Variables</summary>
+    <div class="content">
+        <p>    Code:   Analyzed the Student class structure, tracing how primitives like int grade are stored in the stack, while objects like Student are stored in the heap with references like s1, s2, s3 pointing to heap objects.</p>
+        <p>    Samples:   Student s1 = new Student("John", 85); Student s2 = new Student("Maria", 90); Student s3 = s2; s3.name = "Ana";</p>
+        <p>    Explanation:   s3 = s2 copies the reference, not the object—so when s3.name = "Ana" runs, it modifies the same object s2 points to, reinforcing how OOP references interact in memory.</p>
+    </div>
+</details>
+<details>
+    <summary>Activity #2 – Operators</summary>
+    <div class="content">
+        <p>    Code:   Implemented and traced arithmetic, relational, and logical operators in decision structures.</p>
+        <p>    Samples:   if (grade >= 75 && attendance >= 90) pass = true; else pass = false;</p>
+        <p>    Explanation:   Operators enabled conditional logic based on multiple inputs, ensuring correct program behavior under varying conditions.</p>
+    </div>
+</details>
+<details>
+    <summary>Activity #3 – ATM with Transaction Counter</summary>
+    <div class="content">
+        <p>    Code:   Built an ATM system with deposit, withdrawal, and balance inquiry, tracking daily transactions using a counter.</p>
+        <p>    Samples:   public void deposit(double amount) { balance += amount; transactionCount++; }</p>
+        <p>    Explanation:   Encapsulation ensured data integrity, while the transaction counter demonstrated state management across method calls.</p>
+    </div>
+</details>
+<details>
+    <summary>Activity #4 – Student Payment System with Validation Counter</summary>
+    <div class="content">
+        <p>    Code:   Created a student payment system validating input amounts and tracking failed attempts.</p>
+        <p>    Samples:   if (amount > 0 && amount <= balance) processPayment(); else invalidAttempts++;</p>
+        <p>    Explanation:   Input validation improved robustness, and the counter reinforced error handling best practices in OOP design.</p>
+    </div>
+</details>
+<details>
+    <summary>Activity #5 – Personal Expense Tracker</summary>
+    <div class="content">
+        <p>    Code:   Developed a tracker managing income, expenses, and categories using arrays and classes.</p>
+        <p>    Samples:   expenseList.add(new Expense("Food", 150.00)); totalExpense += expense.amount;</p>
+        <p>    Explanation:   Using arrays and objects simplified data organization, while the tracker demonstrated real-world application of OOP principles.</p>
+    </div>
 </details>
         </main>
         <footer>

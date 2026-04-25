@@ -3,39 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Midterms | OOP E-Portfolio</title>
+        <title>Object-Oriented Programming E-Portfolio</title>
         <link rel="stylesheet" href="css/main.css">
         <script src="js/router.js"></script>
     </head>
-    <body class="terms">
+    <body class="terms" style="transition: none;">
         <header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="midterms.html" class="active">Midterms</a>
-                <a href="finals.html">Finals</a>
+            <nav style="padding-right: 10px;">
+                <a href="index.html" class="active" data-page="index">Home</a>
+                <a href="midterms.html" data-page="midterms">Midterms</a>
+                <a href="" data-page="finals">Finals</a>
                 <a href="contacts.html">Contact</a>
             </nav>
         </header>
         <main>
             <div class="left-panel">
                 <div class="card">
-                    <h1>Midterms</h1>
-                    <h3>Contents</h3>
-                    <p>This section includes all of my activities, quizzes, seatworks, and examination.</p>
+                    <h1>midterms</h1>
+                    <h3>Contents:</h3>
+                    <p>Midterms page, includes all of my activities, quizzes, assignments, and examination</p>
+                </div>
+                <div class="card">
+                    <a href="index.html" class="button">back</a>
                 </div>
             </div>
             <div class="navigation">
-                <a href="" class="button">Quizzes</a>
-                <a href="" class="button">Seatworks</a>
-                <a href="midterm_activities.html" class="button">Activities</a>
-                <a href="" class="button">Exam</a>
+                <a href="" class="button" data-page="midterms">quizzes</a>
+                <a href="" class="button" data-page="finals">seatworks</a>
+                <a href="midterm_activities.html" class="button">activities</a>
+                <a href="" class="button" data-page="finals">assignments</a>
+                <a href="" class="button" data-page="finals">examination</a>
             </div>
         </main>
         <footer>
-            <div id="date">&copy; 2026 Ardani Melencio | OOP Midterm Project</div>
+            <div id="date">&copy; 2026 Ardani Melencio | Object-Oriented Programming Midterm Project</div>
             <div id="details">
-                <p>Author: Ardani Jandel Melencio</p>
-                <p>Email: ardanimelencio@gmail.com</p>
+                <p>author: Ardani Jandel Melencio</p>
+                <p>gmail: ardanimelencio@gmail.com | contact number: 09393452249</p>
             </div>
         </footer>
     </body>
