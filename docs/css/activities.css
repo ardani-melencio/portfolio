@@ -1,0 +1,83 @@
+@import url("default.min.css");
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+main {
+
+    height: -moz-available;
+    width: -moz-available;
+    overflow-y: scroll;
+    padding: 20px;
+    min-height: 0px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+}
+
+details {
+    width: -moz-available;
+    height: -moz-available;
+
+    transition: all 0.5s; 
+    background-color: rgba(0, 0, 0, 0.625);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+
+    border: 1px solid rgba(53, 53, 53, 0.779);
+}
+
+summary {
+    font-size: larger;
+    border: 10px;
+}
+
+h3 { margin-top: 20px; text-align: start;}
+
+p {
+    margin-top: 20px;
+    text-align: start;
+}
+
+li {
+    margin-left: 30px;
+}
+
+pre {
+    background: rgba(29, 29, 29, 0.759);
+    margin: 20px;
+    padding: 5px;
+    color: rgba(48, 48, 48, 0.759);
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+code {
+    margin-left: 15px;
+    font-size: small;
+}
+
+main a{
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+.samples {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.samples img {
+    flex: content;
+    max-height: fit-content;
+}
+

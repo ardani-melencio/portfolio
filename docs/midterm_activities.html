@@ -1,16 +1,17 @@
-
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Object-Oriented Programming E-Portfolio</title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/activities.css">
-        <script src="js/router.js"></script>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/activities.css">
+        <link rel="stylesheet" href="./css/default.min.css">
+        <script src="./js/highlight.min.js"></script>
+        <script src="./js/router.js"></script>
+        <script>hljs.highlightAll();</script>
     </head>
-    <body class="terms" style="transition: none;">
+    <body class="inner-page" style="transition: none;">
         <header>
             <nav style="padding-right: 10px;">
                 <a href="index.html" class="active" data-page="index">Home</a>
@@ -23,41 +24,554 @@
             <details>
     <summary>Activity #1 – Variables</summary>
     <div class="content">
-        <p>    Code:   Analyzed the Student class structure, tracing how primitives like int grade are stored in the stack, while objects like Student are stored in the heap with references like s1, s2, s3 pointing to heap objects.</p>
-        <p>    Samples:   Student s1 = new Student("John", 85); Student s2 = new Student("Maria", 90); Student s3 = s2; s3.name = "Ana";</p>
-        <p>    Explanation:   s3 = s2 copies the reference, not the object—so when s3.name = "Ana" runs, it modifies the same object s2 points to, reinforcing how OOP references interact in memory.</p>
+        <h3>Instructions</h3>
+        <li>Carefully analyze the given Java program.               </li>
+        <li>Trace the references and memory changes step-by-step.   </li>
+        <li>Complete all required tables and questions.             </li>
+        <li>Show your logical reasoning where necessary.            </li>
+        <li>Write your answers in a yellow paper (handwritten).     </li>
+        <li>Take a clear photo or scan of your work.                </li>
+        <li>Upload your file in Canvas on or before the deadline.   </li>
+        <li>Submission Format: Section_LastName_FirstName_CodeAnalysisActivity#1.pdf</li>
+        <h3>Activity Link</h3>
+        <a href="https://canvas.instructure.com/courses/14189251/assignments/62667285/submissions/123736158">🔗 Canvas.com - OOP - Variables</a>
+        <h3>Explanation/Learnings</h3>
+        <p>This activity helped me visualize how Java handles memory through its stack and heap. I learned that primitives like int grade live directly on the stack, while objects like Student are stored in the heap, and references like s1, s2, s3 are just pointers on the stack pointing to those heap objects.</p>
+        <p>A key insight was realizing that s3 = s2 does not copy the object but copies the reference, so when s3.name = Ana happens, it modifies the same object s2 points to since both share that address in memory. This reinforced how OOP is not just about writing classes but understanding how objects, state, and references actually interact.</p>
+        <p>To me, it is like building with Legos: the individual pieces (primitives) are simple and self-contained, but the whole structure (object references) only works when you understand how they connect and share space in memory.</p>
     </div>
 </details>
 <details>
     <summary>Activity #2 – Operators</summary>
     <div class="content">
-        <p>    Code:   Implemented and traced arithmetic, relational, and logical operators in decision structures.</p>
-        <p>    Samples:   if (grade >= 75 && attendance >= 90) pass = true; else pass = false;</p>
-        <p>    Explanation:   Operators enabled conditional logic based on multiple inputs, ensuring correct program behavior under varying conditions.</p>
+        <h3>Instructions</h3>
+        <li>Create a Java program based on the questions.</li>
+        <li>Follow the exact required output shown in the question.</li>
+        <li>You must use the specific operator required in each number.</li>
+        <li>Do NOT hardcode the final answers (e.g., System.out.println(86); without computation is not allowed).</li>
+        <li>Show proper use of variables and correct operator usage.</li>
+        <li>Follow proper Java syntax, indentation, and naming conventions.</li>
+        <li>Use System.out.println() for displaying output.</li>
+        <li>Screenshot the code and the output.</li>
+        <li>Compile and run your program to verify correctness before submission.</li>
+        <li>Submission Format: Section_LastName_FirstName_OperatorsActivity#2.pdf</li>
+        <h3>Activity Link</h3>
+        <a href="https://canvas.instructure.com/courses/14189251/assignments/62667293/submissions/123736158">🔗 Canvas.com - OOP - Operators</a>
+        <h3>Code</h3>
+        <p>Part I</p>
+        <pre>--Number 1--
+            <code class="language-java">
+public class Number1{
+
+    public static void main(String[] args){
+
+        int x = 10;
+        int y = 5; 
+
+        System.out.println(x > y);
+        System.out.println(x);
+        System.out.println(x < y);
+        System.out.println(x + y);
+    }
+}
+            </code>
+        </pre>
+        <pre>--Number 2--
+            <code>
+public class Number2{
+
+    public static void main(String[] args){
+
+        int x = 25;
+        int y = 30; 
+
+        System.out.println(x < y);
+        System.out.println(x > y);
+        System.out.println(x);
+        System.out.println(y);
+    }
+}
+            </code>
+        </pre>
+        <pre>--Number 3--
+            <code>
+public class Number3{
+
+    public static void main(String[] args){
+
+        int x = 95;
+        int y = 25; 
+
+        int a = 12;
+        int b = 192;
+
+        System.out.println("Addition: \t" + (x+y));
+        System.out.println("Subtraction: \t" + (x-y));
+        System.out.println("Multiplication: " + (a * a));
+        System.out.println("Division: \t" + (b / a));
+    }
+}
+            </code>
+        </pre>
+        <h3>Part II</h3>
+        <pre><code>
+public class Part_2{
+
+    public static void main(String[] args){
+
+        int var_1 = 69;
+        int var_2 = 67; 
+
+        System.out.println(69<<2);
+
+        System.out.println(var_1*var_2);                                //  69 * 67              = 4623
+        System.out.println((--var_1 - ++var_2) < (++var_1 - --var_2));  // (68 - 68) < (69 - 67) = True
+        System.out.println(var_1*(var_2%var_1) == var_2*(var_1/var_2)); //  4623 == 67           = False
+        System.out.println( var_1 > var_2 ? var_1 : var_2 );            //  69 > 67 ? 69 : 67    = 69
+        System.out.println(var_1<<2);                                   //  1000101 = 100010100
+        System.out.println(var_2 | var_1);
+    }   
+}
+        </code></pre>
+        <h3>Samples</h3>
+        <p>Part I</p>
+        <div>
+            <img src="src/img/Act2Part1N1.png">
+            <img src="src/img/Act2Part1N2.png">
+            <img src="src/img/Act2Part1N3.png">
+        </div>
+        <p>Part II</p>
+        <div>
+            <img src="src/img/Act2Part2N1.png">
+        </div>
+        <h3>Explanation/Learnings</h3>
+        <p>This activity allowed me to focus more on the incremental and combination of operations in java, as it gets more complicated the more abstracted the logic created by the user.</p>
+        <p>I believe that this even pushes the belief of proper commenting to be able to understand complex ideas from code to the own's mind.</p>
     </div>
 </details>
 <details>
     <summary>Activity #3 – ATM with Transaction Counter</summary>
     <div class="content">
-        <p>    Code:   Built an ATM system with deposit, withdrawal, and balance inquiry, tracking daily transactions using a counter.</p>
-        <p>    Samples:   public void deposit(double amount) { balance += amount; transactionCount++; }</p>
-        <p>    Explanation:   Encapsulation ensured data integrity, while the transaction counter demonstrated state management across method calls.</p>
+        <h3>Instructions</h3>
+        <li>Create a Java program that accepts student information and evaluates the student’s grade using decision structures.</li>
+        <h3>Activity Link</h3>
+        <a href="https://canvas.instructure.com/courses/14189251/assignments/63438401/submissions/123736158">🔗 Canvas.com - OOP - ATM with Transaction Counter</a>
+<pre>
+    <code>
+
+import java.util.Scanner;
+
+public class SecureATMSystemMelencio{
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int retries = 0;
+		Account account = new Account();
+		
+		do  {
+			System.out.println("Enter PIN: ");
+			String input = scan.nextLine();
+			
+			if (input.equals(account.PIN)) {
+				while (true) {
+					System.out.println("\033[H\033[2J\033[3J");
+					System.out.println("===== ATM MENU ======\n"
+				
+						+ "1. Check balance\n"
+						+ "2. Deposit\n"
+						+ "3. Withdraw\n"
+						+ "4. Exit\n");
+					
+					try {
+						int selection = scan.nextInt();
+	
+						switch (selection) {
+					
+					case 1:
+						System.out.println("Current Balance: " + account.bal);
+						break;
+					case 2:
+						System.out.println("Deposit: ");
+						float deposit = scan.nextFloat();
+						account.Deposit(deposit);
+						break;
+					case 3:
+						System.out.println("Withdraw: ");
+						float withdraw = scan.nextFloat();
+						account.Withdraw(withdraw);
+						break;
+					case 4:
+						System.out.println("Exited program");
+						scan.close();
+						return;
+						}
+					
+					}
+					catch (Exception e) {
+						System.out.println(e);
+						scan.nextLine();
+					}
+				}
+			}
+			else {
+				System.out.println("Wrong PIN! [" + (3 - (++retries)) + " retries left] ");
+			}
+			
+		}
+		while (retries < 3);
+		
+		scan.close();
+	}
+	
+	private static class Account{
+		
+		String PIN = "Melencio1234";
+		float bal;
+		
+		public Account() {}
+		
+		public String Withdraw(float amount) {
+			
+			if (amount > 0) {
+				if (amount <= 2000) {
+					if (amount <= bal) {
+						bal -= amount;
+						return "Transaction successful";
+					}
+					else {
+						System.out.println("Withdrawal must be less than or equal to balance");
+					}
+				}
+				else {
+					System.out.println("Withdrawal must be 2,000 or below");
+				}
+			}
+			else {
+				System.out.println("Withdrawal must be more than 0");
+			}
+			
+			return "/nError!";
+		}
+		
+		public String Deposit(float amount) {
+			
+			if (amount > 0) {
+				
+				bal += amount;
+				return "Successful transaction";
+				
+			}
+
+			return "Error!";
+		}
+	}
+}
+    </code>
+</pre>
+        <h3>Samples</h3>
+        <div class="samples">
+            <img src="src/img/Act3/2026-03-27-230608_hyprshot.png">
+            <img src="src/img/Act3/2026-03-27-230836_hyprshot.png">
+            <img src="src/img/Act3/2026-03-27-230924_hyprshot.png">
+            <img src="src/img/Act3/2026-03-27-230942_hyprshot.png">
+            <img src="src/img/Act3/2026-03-27-230955_hyprshot.png">
+        </div>
+        <h3>Explanation/Learnings</h3>
+        <p>This activity provided me with the logic of try-catches and other control statements in context of java and how it functions in the environment.</p>
     </div>
 </details>
 <details>
     <summary>Activity #4 – Student Payment System with Validation Counter</summary>
     <div class="content">
-        <p>    Code:   Created a student payment system validating input amounts and tracking failed attempts.</p>
-        <p>    Samples:   if (amount > 0 && amount <= balance) processPayment(); else invalidAttempts++;</p>
-        <p>    Explanation:   Input validation improved robustness, and the counter reinforced error handling best practices in OOP design.</p>
+        <h3>Activity Link</h3>
+        <a href="https://canvas.instructure.com/courses/14189251/assignments/63438531/submissions/123736158">🔗 Canvas.com - OOP - Student Payment System with Validation Counter</a>
+<pre>
+    <code>
+import java.util.Scanner;
+
+public class StudentPaymentSystemMelencio{
+	
+	public static void main(String[] args) {
+		
+		// Initiate scanner
+		Scanner scan = new Scanner(System.in);
+		
+		// Create a new Student class
+		Student student = new Student();
+		
+		student.getInfo(scan);
+		
+		while (true) {
+			System.out.println("===== PAYMENT MENU =====\n" +
+							   "1. Pay Tuition\n" +
+							   "2. Check Balance\n" +
+							   "3. Apply Discount\n" +
+							   "4. Exit\n"
+			);
+
+			int input = scan.nextInt();
+
+			try {
+				switch (input) {
+					case 1:
+						student.payTuition(scan);
+						break;
+					case 2:
+						student.checkBalance(scan);
+						break;
+					case 3:
+						if (student.canDiscount) student.applyDiscount(scan);
+						else System.out.println("Already used discount");
+						break;
+					case 4:
+						student.cleanupExit();
+						return;
+					default:
+						System.out.println("Invalid value! Try again");
+						break;
+				}
+			}
+			catch (Exception e) {
+				System.out.println(e);
+			}
+			
+			scan.nextLine();
+		}
+		
+	}
+	
+	private static class Student {
+		
+		String name;
+		String id;
+		float tuition;
+		int transactionCounter = 0;
+		boolean canDiscount = true;
+		
+		public Student() {}
+
+		public void payTuition(Scanner scan) {
+			while (true) {
+				System.out.println("Payment amount: ");
+				float payment = scan.nextFloat();
+				
+				if (payment > this.tuition || 0 > payment) {
+					System.out.println("Invalid Payment!");
+				}
+				else {
+					System.out.println("Deducted " + payment + " from " + this.tuition + " = New Balance : " + (this.tuition-payment));
+					this.tuition -= payment;
+					break;
+				}
+			}
+			this.transactionCounter++;
+		}
+
+
+		public void checkBalance(Scanner scan) {
+			System.out.println("Remaining Balance: " + this.tuition);
+			this.transactionCounter++;
+		}
+
+
+		public void applyDiscount(Scanner scan) {
+			while (true) {
+				System.out.println("=== Discount Selection\n" +
+								   "1. Scholar\n"+
+								   "2. Student\n"
+				);
+				try {
+					int selected = scan.nextInt();
+					switch (selected) {
+						case 1:
+							this.canDiscount = false;
+							tuition -= (tuition*.20); 
+							return;
+						case 2:
+							System.out.println("Regular Students don't receive discount");
+							return;
+						default:
+							System.out.println("Invalid input");
+							break;
+					};
+				}
+				catch (Exception e) {
+					System.out.println(e);
+				}
+
+				scan.nextLine();
+			}
+		}
+
+
+		public void cleanupExit(){
+			System.out.println("Student Name: " + this.name);
+			System.out.println("Total Transactions: " + this.transactionCounter);
+			System.out.println("Final Balance: " + this.tuition);
+		}
+
+		
+		public void getInfo(Scanner scan) {
+
+			// Request Student Name
+			System.out.println("Enter Student Name: ");
+			this.name = scan.nextLine();
+
+			// Request Student PIN (String since some can contain letters eg. 2024-01135-MN-0)
+			System.out.println("Enter Student PIN: ");
+			this.id = scan.nextLine();
+					
+			// Request Current Tuition
+			while(true){
+				System.out.println("Enter Total Tuition Fee: ");
+				try {
+					this.tuition = scan.nextFloat();
+					break;
+				}
+				catch (Exception e){
+					System.out.println("Wrong input! " + e);
+					scan.nextLine();
+				}
+			}
+			return;
+		}
+	}
+}
+    </code>
+</pre>
+        <h3>Samples</h3>
+        <div class="samples">
+            <img src="src/img/Act4/2026-03-28-000813_hyprshot.png">
+            <img src="src/img/Act4/2026-03-28-000834_hyprshot.png">
+            <img src="src/img/Act4/2026-03-28-000855_hyprshot.png">
+            <img src="src/img/Act4/2026-03-28-000922_hyprshot.png">
+            <img src="src/img/Act4/2026-03-28-000935_hyprshot.png">
+            <img src="src/img/Act4/2026-03-28-000944_hyprshot.png">
+        </div>
+        <h3>Explanation/Learnings</h3>
+        <p>This activity was a simple exercise for me, as these topics have been covered in my self-learning journey.</p>
+        <p>I believe that this method of branching if-statements and try-catches can still be cleaned up, as I will learn that in the near future</p>
     </div>
 </details>
 <details>
     <summary>Activity #5 – Personal Expense Tracker</summary>
     <div class="content">
-        <p>    Code:   Developed a tracker managing income, expenses, and categories using arrays and classes.</p>
-        <p>    Samples:   expenseList.add(new Expense("Food", 150.00)); totalExpense += expense.amount;</p>
-        <p>    Explanation:   Using arrays and objects simplified data organization, while the tracker demonstrated real-world application of OOP principles.</p>
+        <h3>Activity Link</h3>
+        <a href="https://canvas.instructure.com/courses/14189251/assignments/63930119/submissions/123736158">🔗 Canvas.com - OOP - Personal Expense Tracker</a>
+<pre>
+    <code>
+import java.util.Scanner;  
+
+public class ExpenseTrackerMelencio {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        float budget = 0;
+        float[] totalExpenses = new float[4];  
+        
+        // Main program loop
+        while (true) {
+            try {
+                // Display program title
+                program_title();  
+                
+                // Get initial budget if not set
+                if (budget == 0) budget = get_budget(scanner);  
+                
+                // Check if expenses exceed budget
+                System.out.println(check_balance(scanner, budget, totalExpenses));  
+                
+                // Show menu options
+                System.out.println("---MENU---\n" +
+                                  "1. Add expense\n" +
+                                  "2. Display budget\n" +
+                                  "3. Exit");  
+                
+                // Process menu selection
+                switch (scanner.nextInt()) {
+                    case 1:
+                        get_expense(scanner, totalExpenses);
+                        break;
+                    case 2:
+                        show_budget(budget, totalExpenses);
+                        break;
+                    case 3:
+                        System.out.println("Exiting program...");
+                        return;
+                    default:
+                        System.out.println("Entry not in menu selection");
+                }
+            }
+            catch (Exception e) {
+                System.out.println(e);
+            }
+            scanner.nextLine();
+        }  
+    }  
+
+    // Print program title
+    static void program_title() {
+        System.out.println("           Midterm Activity # 5           ");
+        System.out.println("======== PERSONAL EXPENSE TRACKER ========");
+    }  
+
+    // Get user budget input
+    static float get_budget(Scanner scanner) {
+        System.out.println("Enter budget: ");  
+        return scanner.nextFloat();
+    }  
+
+    // Check if expenses exceed budget
+    static String check_balance(Scanner scanner, float budget, float[] totalExpenses) {
+        float total = 0;
+        for (int i = 0; i < 4; i++) total += totalExpenses[i];  
+        return (total > budget) ? "WARNING: Total expense is over budget" : "";
+    }  
+
+    // Add new expense to category
+    static void get_expense(Scanner scanner, float[] totalExpenses) {  
+        while (true) {
+            System.out.println("Select expense type:\n" +
+                              "1. Food\n" +
+                              "2. Transportation\n" +
+                              "3. Entertainment\n" +
+                              "4. Other Expenses");
+            int input = scanner.nextInt();  
+            if (0 < input && input < 5) {
+                System.out.println("Expense: ");
+                totalExpenses[input-1] += scanner.nextFloat();
+                return;
+            }
+            else System.out.println("Invalid expense type");
+        }
+    }  
+
+    // Display budget and expenses
+    static void show_budget(float budget, float[] totalExpenses) {
+        float total = 0;
+        for (int i = 0; i < 4; i++) total += totalExpenses[i];  
+        System.out.println(String.format("Total Budget: %.2f\n" +
+                                       "Total Expenses: %.2f\n" +
+                                       "Budget: %.2f",
+                                       budget, total, (budget - total)));
+        System.out.println(String.format("\nFood: %.2f\n" +
+                                       "Transportation: %.2f\n" +
+                                       "Entertainment: %.2f\n" +
+                                       "Other Expenses: %.2f",
+                                       totalExpenses[0], totalExpenses[1], 
+                                       totalExpenses[2], totalExpenses[3]));
+    }
+}
+
+    </code>
+</pre>
+        <div class="samples">
+            <img src="src/img/Act5/2026-04-26-062818_hyprshot.png">
+            <img src="src/img/Act5/2026-04-26-062827_hyprshot.png">
+            <img src="src/img/Act5/2026-04-26-062838_hyprshot.png">
+        </div>
+        <h3>Explanation/Learnings</h3>
+        <p>This activity is much more simplified than the previous activity, as I've only used static functions instead of class functions, this allowed for a much more succinct script, but lacks expandability</p>
     </div>
 </details>
         </main>

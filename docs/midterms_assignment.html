@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Object-Oriented Programming E-Portfolio</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/activities.css">
+        <link rel="stylesheet" href="css/default.min.css">
+        <script src="js/highlight.min.js"></script>
+        <script src="js/router.js"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+    <body class="inner-page" style="transition: none;">
+        <header>
+            <nav style="padding-right: 10px;">
+                <a href="index.html" class="active" data-page="index">Home</a>
+                <a href="midterms.html" data-page="midterms">Midterms</a>
+                <a href="" data-page="finals">Finals</a>
+                <a href="contacts.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <details>
+    <summary>Assignment #1 – About Me</summary>
+    <div class="content">
+        <h3>Explanation/Learnings</h3>
+        <p>This activity helped me visualize how Java handles memory through its stack and heap. I learned that primitives like int grade live directly on the stack, while objects like Student are stored in the heap, and references like s1, s2, s3 are just pointers on the stack pointing to those heap objects. </p>
+        <p>A key insight was realizing that s3 = s2 does not copy the object but copies the reference, so when s3.name = Ana happens, it modifies the same object s2 points to since both share that address in memory. This reinforced how OOP isn't just about writing classes but understanding how objects, state, and references actually interact. </p>
+        <p>me, it is like building with Legos: the individual pieces (primitives) are simple and self-contained, but the whole structure (object references) only works when you understand how they connect and share space in memory.</p>
+    </div>
+</details>
+<details>
+    <summary>Activity #2 – Operators</summary>
+    <div class="content">
+        <h3>Explanation/Learnings</h3>
+        <pre>
+            <code class="language-java">
+class Student{
+
+    String  name;
+    int     grade;
+
+    Student(String n, int g){
+        name    = n;
+        grade   = g;
+    }
+
+    void pr(){
+        System.out.println(name + " " + grade);
+    }
+
+}
+    
+
+public class TestStudent {
+    public static void main(String[] args) {
+
+        Student s1 = new Student("John", 85);
+        Student s2 = new Student("Maria", 90);
+        Student s3 = s2;
+
+        s1.grade = 95;
+        s3.name = "Ana";
+
+        s1.pr();
+        s2.pr();
+        s3.pr();
+    }
+
+}</code>
+        </pre>
+        <p>    Samples:   if (grade >= 75 && attendance >= 90) pass = true; else pass = false;</p>
+        <p>    Explanation:   Operators enabled conditional logic based on multiple inputs, ensuring correct program behavior under varying conditions.</p>
+    </div>
+</details>
+        </main>
+        <footer>
+            <div id="date">&copy; 2026 Ardani Melencio | Object-Oriented Programming Midterm Project</div>
+            <div id="details">
+                <p>author: Ardani Jandel Melencio</p>
+                <p>gmail: ardanimelencio@gmail.com | contact number: 09393452249</p>
+            </div>
+        </footer>
+    </body>
+</html>

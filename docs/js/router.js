@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.transition = '0s';
 
     if (document.body.classList.contains('main-page')) reposition("100% 50%");
-    else if (document.body.classList.contains('terms')) reposition("50% 50%");
-    else if (document.body.classList.contains('nAn')) reposition('0%');
+    if (document.body.classList.contains('terms')) reposition("50% 50%");
+    if (document.body.classList.contains('inner-page')) reposition('0% 50%');
 
 
     navLinks.forEach(link => {
