@@ -50,7 +50,7 @@ function reposition(newPosition) {
         // Then animate to new position
 
         requestAnimationFrame(() => {
-            document.body.style.transition = 'all 0.5s';
+            document.body.style.transition = 'all 0.5s ease-in-out';
             requestAnimationFrame(() => {
                 document.body.style.backgroundPosition = newPosition;
             });

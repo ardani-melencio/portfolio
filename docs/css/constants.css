@@ -24,6 +24,16 @@ h3 {
     color: transparent;
 }
 
+h2 {
+    font-size:x-large;    
+    font-family: 'Surgena';
+    background-color: rgb(49, 51, 65);
+    background: linear-gradient(rgb(214, 100, 55), rgb(254, 255, 213));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 h1, h3, p {
     text-align: center;
     margin-top: 0px;
